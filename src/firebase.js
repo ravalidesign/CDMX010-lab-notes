@@ -1,13 +1,14 @@
-import firebase from "firebase/app"
-import "firebase/firestore"
+import firebase from 'firebase/app';
+import 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyD3xbS8fxYG2rLBd3R1Wt_LioZQV9QAjP4",
-    authDomain: "lab-notes-remembrall.firebaseapp.com",
-    projectId: "lab-notes-remembrall",
-    storageBucket: "lab-notes-remembrall.appspot.com",
-    messagingSenderId: "354285918379",
-    appId: "1:354285918379:web:b063a7c58918af30837fee"
+  apiKey: "AIzaSyCg5--3bn-BSQUCHIyxg-syXwOWUhEeNcw",
+  authDomain: "recordadora-1b389.firebaseapp.com",
+  projectId: "recordadora-1b389",
+  storageBucket: "recordadora-1b389.appspot.com",
+  messagingSenderId: "310137859602",
+  appId: "1:310137859602:web:5db02df24edc591a65f2cb",
+  measurementId: "G-C1X5HW65Y2"
   };
   // Initialize Firebase
   const fireb=firebase.initializeApp(firebaseConfig);

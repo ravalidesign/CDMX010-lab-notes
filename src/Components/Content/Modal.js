@@ -8,8 +8,9 @@ export const Modal =()=>{
   <div id="miModal" class="modal">
      <div class="modal-contenido">
         <Note />
-      <button><a href="#">Cerrar</a></button>
-     </div>  
+        <a href="#">Cerrar</a>
+     </div> 
+     
  </div>
 
 
