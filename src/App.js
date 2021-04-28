@@ -1,41 +1,50 @@
-import './App.css';
-import React from "react"
-import {
-  BrowserRouter as Router,
+import "./App.css";
+import React from "react";
+import { Print } from "./Components/Content/Print";
+import { Navbar } from "./Components/Content/Navbar";
+import { SignUp } from "./Components/SignUp/SignUp"
+import { LogIn } from "./Components/login/LogIn"
+import {BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from 'react-router-dom'
 
-import { Modal } from "./Components/Content/Modal"
-import { Print } from "./Components/Content/Print"
-import { Navbar } from "./Components/Content/Navbar"
-import crearnota from './assets/crearnota.png';
-
 function App() {
+
   return (
+
+
     <Router>
       <Switch>
-
+        
         <Route path="/wall">
           <div className="App">
-
             <Navbar />
-            <Modal />
-            <button className="createNote"><a href="#miModal"> <img src={crearnota} alt="crearnota" /></a></button>
-            <div className="impNotes">
-              <h2>Historial de tus notas </h2>
-              <Print />
-            </div>
+            <Print />
           </div>
         </Route>
 
-        <Route path="/">
-          Estas en inicio 
+        <Route path="/SignUp">
+          <SignUp />
+
+
         </Route>
+
+        <Route path="/">
+          <LogIn />
+
+        </Route>
+
+
+
       </Switch>
 
+
+
+
     </Router>
+
   );
 }
 
