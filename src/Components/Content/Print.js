@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { fireStore } from "../../firebase";
 import { Modal } from "./Modal";
 import crearnota from "../../assets/crearnota.png";
+import { Search } from '../Elements/Search';
+import borrar from "../../assets/borrar.png";
+import editar from "../../assets/editado.png"
 
 export const Print = () => {
   const [notes, setNotes] = useState([]);
@@ -15,11 +18,11 @@ export const Print = () => {
       setNotes(newArray);
     };
 
-    getNotes();  
+    getNotes();
   }, []);
 
   const hideModal = () => {
-      console.log('closing modal')
+    console.log('closing modal')
     setOpen(false);
   };
 
@@ -38,22 +41,28 @@ export const Print = () => {
     }
   };
 
-   
+
 
   return (
     <>
       <div>
-        <button className="createNote">
-          <a  onClick={() => {
+        <div className="header">
+          <button className="createNote">
+            <a onClick={() => {
               showModal()
-          }}>
-            
-            <img src={crearnota} alt="crearnota" />
-          </a>
-        </button>
-        <h2>Historial de tus notas </h2>
-        <div className="impNotes">
-          <div className="Print">
+            }}>
+
+              <img src={crearnota} alt="crearnota" />
+            </a>
+          </button>
+          <Search />
+        </div>
+
+        <h2 className="titlePrint">Historial de tus notas </h2>
+
+
+        <div className="printContet">
+          <div className="print">
             {notes.length !== 0 ? (
               notes.map((note) => (
                 <div className="printNotes" key={note.id}>
@@ -62,20 +71,28 @@ export const Print = () => {
                     <h4>{note.title}</h4>
                     <h4>{note.description}</h4>
                     <button
+                      className="buttomPrint"
                       onClick={(id) => {
                         deleteNote(note.id);
                       }}
+                     
                     >
-                      Borrar
+                       <img className="imgPrint" src={borrar} alt="borrar" />
+                      
                     </button>
-                    
+
                     <button
+                    
+                    
+                      className="buttomPrint"
                       onClick={() => {
                         setSelectedNote(note)
                         showModal()
                       }}
+                      
                     >
-                      Actualizar
+                      <img className="imgPrint" src={editar} alt="borrar" />
+                      
                     </button>
                   </div>
                 </div>
@@ -86,7 +103,7 @@ export const Print = () => {
           </div>
         </div>
       </div>
-      <Modal onClose={hideModal} open={open} note={selectedNote}/>
+      <Modal onClose={hideModal} open={open} note={selectedNote} />
     </>
   );
 };

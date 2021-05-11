@@ -1,0 +1,51 @@
+.LogIn{
+    background-image: url("./assets/paper.jpg");
+    height: 1024px;
+    width: 770px;
+    padding: 200px 50px 50px 0px
+
+}
+.Description-remembrall{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.imgLog{
+    width:160px;
+}
+.formLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.formLogin-content{
+    width: 400px;
+    height: 320px;
+    margin: auto;
+    border-radius: 4px;
+    background: radial-gradient(circle,  #500d25, #350819);
+    padding: 15px 15px 15px 15px;
+}
+
+.formLogin-content h2{
+    font-size: 28px;
+    color:rgb(238, 212, 155);
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Mountains of Christmas", cursive;
+
+
+}
+.controlsLogin{
+    font-size: 20px;
+    color:rgb(238, 212, 155);
+    margin-top: 18px;
+    margin-left: 18px;
+    margin-bottom: 20px;
+    width: 350px;
+    text-align: center;
+    border-color:rgb(238, 212, 155);
+    background-color:transparent;
+    font-family: "Mountains of Christmas", cursive;
+}

@@ -1,10 +1,13 @@
 import "./App.css";
+import "./SignUp.css";
+import "./LogIn.css";
 import React from "react";
 import { Print } from "./Components/Content/Print";
 import { Navbar } from "./Components/Content/Navbar";
 import { SignUp } from "./Components/SignUp/SignUp"
 import { LogIn } from "./Components/login/LogIn"
-import {BrowserRouter as Router,
+import {
+  BrowserRouter as Router,
   Switch,
   Route,
   Link
@@ -17,7 +20,7 @@ function App() {
 
     <Router>
       <Switch>
-        
+
         <Route path="/wall">
           <div className="App">
             <Navbar />
@@ -26,13 +29,16 @@ function App() {
         </Route>
 
         <Route path="/SignUp">
-          <SignUp />
-
-
+          <div className="signUp">
+            <SignUp />
+          </div>
         </Route>
 
         <Route path="/">
+          <div className="LogIn" >
           <LogIn />
+          </div>
+          
 
         </Route>
 

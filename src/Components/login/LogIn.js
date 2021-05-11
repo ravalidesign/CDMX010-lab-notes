@@ -1,5 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { auth } from '../../firebase'
+import remembrall from "../../assets/remembrallLog.png";
+
 
 export const LogIn = () => {
 
@@ -21,11 +23,16 @@ export const LogIn = () => {
 
     return (
         <Fragment>
+            <div className="Description-remembrall">
+            <img className="imgLog" src={remembrall} alt="borrar" />
 
-            <h2>¿ Ya eres un mago ? ...Inicia Sesiòn </h2>
-            <form onSubmit={loginUser} className="formLogin">
-                <div>
+            </div>
 
+           
+            <form onSubmit={loginUser} className="form">
+                <div className="formLogin">
+                    <div className="formLogin-content">
+                    <h2>¿ Ya eres un mago ? </h2>
                     <input
                       onChange={(e) => { setEmail(e.target.value) }}
                         className="controlsLogin"
@@ -41,7 +48,10 @@ export const LogIn = () => {
                     <button 
                         className=" buttonSignUp"
                         type="submit" >
-                        Iniciar Sesion </button>
+                        !Alohomora! </button>
+                    </div>
+
+                    
                 </div>
             </form>
         </Fragment>

@@ -25,7 +25,7 @@ export const Note = (props) => {
         console.log(error);
       }
 // Funcion para agregar notas //
-
+ 
       fireStore.collection("remember");
     } else {
       const writeNotes = {
