@@ -6,6 +6,8 @@
   height: 100%;
   background-position: center center;
   background: radial-gradient(circle,  #500d25, #350819);
+  width: auto;
+  height: auto;
 }
 
 .navbar {
@@ -111,7 +113,7 @@
 .print{
   width: 100%;
   display: flex;
-  flex-flow: column wrap;
+  
 }
 
 .printNotes {

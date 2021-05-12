@@ -1,17 +1,30 @@
 .LogIn{
     background-image: url("./assets/paper.jpg");
-    height: 1024px;
+    height: 2000px;
     width: 770px;
-    padding: 200px 50px 50px 0px
+    padding: 120px 50px 50px 0px;
+    background-repeat: no-repeat;
 
 }
 .Description-remembrall{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: 40px;
+    width: 500px;
+    height: 320px;
+    margin: auto;
+}
+.Description-remembrall p {
+    font-size: 22px;
+    color:#350819;
+    text-align: center;
+    font-family: "Mountains of Christmas", cursive;
 }
 .imgLog{
     width:160px;
+    margin-left: 165px;
+    margin-bottom: 20px;
 }
 .formLogin{
     display: flex;
