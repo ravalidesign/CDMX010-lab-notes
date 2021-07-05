@@ -10,19 +10,20 @@ export const Navbar = ({ user }) => {
         auth.signOut().then(() => console.log("sign Out"))
 
     }
-    //  if (user === null) {
-    //     return <Redirect to="/" />
+     if (!user) {
+        return <Redirect to="/" />
 
-    //  }
+     }
 
     return (
         <div className="navbar">
-            <p> User {user.email} is Logged in</p>
-            <img src={remembrall} alt="remembrall" />
-            <button onClick={handleLogOut}>Cerrar Sesion </button>
-
-
-
+            <div className="navbar-content">
+                <img src={remembrall} alt="remembrall" />
+                <p>  ¡Bienvenidx a Howarts!<br></br>{user.email} </p>
+                <button className="SignOut" 
+                onClick={handleLogOut}> 
+                Cerrar Sesión </button>
+            </div>
         </div>
     )
 }

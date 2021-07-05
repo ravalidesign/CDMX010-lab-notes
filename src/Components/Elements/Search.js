@@ -6,7 +6,7 @@ export const Search = () => {
         
             <input type="text"
                 className="searchText"
-                placeholder="Busca tus notas">
+                placeholder="busqueda">
             </input>
         
 

@@ -8,7 +8,7 @@ const initialInputs = {
     password: ''
 }
 
-export const LogIn = (user) => {
+export const LogIn = (props) => {
     const [inputs, setInputs] = useState(initialInputs)
     
 
@@ -24,9 +24,9 @@ export const LogIn = (user) => {
             .then((user) => console.log("logged in"))
     }
     
-//  if (user){
-//     return <Redirect to="/Wall" />
-//  }
+    if (props.user){
+    return <Redirect to="/wall" />
+ }
 
     return (
         <Fragment>
