@@ -66,7 +66,7 @@ export const Print = () => {
               notes.map((note) => (
                 <div className="printNotes" key={note.id}>
                   <div className="content">
-                    <h3 class="title-print">Fecha</h3>
+                    <h3 className="title-print">Fecha</h3>
                     <h4>{note.date}</h4>
                     <h4>Titulo:{note.title}</h4>
                     <h4>Descripción:{note.description}</h4>

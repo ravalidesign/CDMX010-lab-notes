@@ -2,13 +2,17 @@
 
 .App {
   text-align: center;
-  height: 100vh;
   background-position: center center;
   background: radial-gradient(circle, #500d25, #350819);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-attachment: fixed;
+  margin:0;
+}
+:root{
+  --font:"Mountains of Christmas", cursive;
 }
 .padre{
     width: 100%;
@@ -37,7 +41,7 @@
 
 
 .navbar-content p{
-  font-family: "Mountains of Christmas", cursive;
+  font-family: var(--font);
   color:#500d25;
   font-size: 22px;
 }
@@ -48,7 +52,7 @@
 
 .SignOut{
   background-color:transparent ;
-  font-family: "Mountains of Christmas", cursive;
+  font-family: var(--font);
   color:  #63112e;
   font-size: 15px;
  border-color: #500d25;
@@ -78,7 +82,7 @@
 }
 .Date {
   background-color: transparent;
-  font-family: "Mountains of Christmas", cursive;
+  font-family: var(--font);
   font-size: 15px;
   border: 0;
   margin-bottom: 10px;
@@ -88,7 +92,7 @@
 }
 .Title {
   background-color: transparent;
-  font-family: "Mountains of Christmas", cursive;
+  font-family: var(--font);
   font-size: 17px;
   border: 0;
   margin-bottom: 10px;
@@ -97,7 +101,7 @@
 }
 .descriptionNote {
   background-color: transparent;
-  font-family: "Mountains of Christmas", cursive;
+  font-family: var(--font);
   font-size: 17px;
   border: 0;
   margin-bottom: 10px;
@@ -107,7 +111,7 @@
 }
 .Button {
   background-color: #500d25;
-  font-family: "Mountains of Christmas", cursive;
+  font-family: var(--font);
   color: white;
   font-size: 20px;
   border: 0;
@@ -145,14 +149,14 @@
   height: 30px;
   width: 300px;
   border-radius: 30px;
-  font-family: "Mountains of Christmas", cursive;
+  font-family: var(--font);
   font-size: 20px;
   padding-left: 20px;
 }
 
 
 .titlePrint{
-  font-family: "Mountains of Christmas", cursive;
+  font-family: var(--font);
   color:rgb(238, 212, 155);
 }
 
@@ -175,7 +179,7 @@
     margin-bottom: 30px;
     margin-right: 30px;
     margin-left: 30px;
-    font-family: "Mountains of Christmas", cursive;
+    font-family: var(--font);
     font-size: 25px;
     box-shadow: 20px 30px 100px -60px whitesmoke;
 
@@ -194,16 +198,16 @@
 }
 
 .imgPrint {
-  width:40px;
+  width:30px;
   
 }
 .buttomDelete{
   border-color:#500d25;
   background-color: transparent;
-  font-family: "Mountains of Christmas", cursive;
+  font-family: var(--font);
   color: #500d25;
-  font-size: 14px;
-    width: 50px;
-    height: 24px;
-    margin-right: 40px;
+  font-size: 1rem;
+  height: 2em;
+  margin-right: 2em;
+  border-radius: 0.2em;
 }

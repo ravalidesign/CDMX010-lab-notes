@@ -13,31 +13,6 @@
 ***
 
 ## 1. Preámbulo
-
-Hoy en día no es práctico imaginar el desarrollo web sin HTML, CSS y JavaScript,
-esta última es el alma del desarrollo de aplicaciones web.
-[React](https://reactjs.org/), [Angular](https://angular.io/) y [Vue](https://vuejs.org/)
-son algunos de los _frameworks_ y _librerías_ de JavaScript más utilizados por
-lxs desarrolladorxs alrededor del mundo, y hay una razón para eso.
-En el contexto del navegador, [_mantener la interfaz sincronizada con el estado
-es difícil_](https://medium.com/dailyjs/the-deepest-reason-why-modern-javascript-frameworks-exist-933b86ebc445).
-Al elegir un _framework_ o _librería_ para nuestra interfaz, nos apoyamos en una
-serie de convenciones e implementaciones _probadas_ y _documentadas_ para
-resolver un problema común a toda interfaz web. Esto nos permite concentrarnos
-mejor (dedicar más tiempo) en las características _específicas_ de
-nuestra aplicación.
-
-Cuando elegimos una de estas tecnologías no solo importamos un pedacito de
-código para reusarlo (lo cual es un gran valor per se), si no que adoptamos una
-**arquitectura**, una serie de **principios de diseño**, un **paradigma**, unas
-**abstracciones**, un **vocabulario**, una **comunidad**, etc.
-
-Como desarrolladora front-end, estos kits de desarrollo pueden resultarte
-de gran ayuda para implementar rápidamente características de los proyectos en
-los que trabajes.
-
-## 2. Resumen del Proyecto
-
 No existe día que no tomemos notas, siempre necesitamos apuntar alguna
 dirección, número telefónico, notas de alguna reunión o guardar nuestras URLs
 favoritas para poder consultarlas más tarde. Muchas veces para esta actividad
@@ -53,7 +28,20 @@ Laboratorian se le ocurre la idea de tener una herramienta como una web app para
 que nos permita crear, editar, eliminar y consultar las notas en cualquier
 momento.
 
-Ella está enamorada de la idea y quiere llevarla a cabo, pero no tiene el tiempo
+## 2. Temática del Proyecto
+
+El concepto de remembrall proviene de la primera película de Harry Potter en donde hacen mención de una pequeña
+esfera que le regala su abuela a Neville la cual se llena de humo rojo al momento que olvida algo.
+<img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300px">
+La relación esta en que la funcionalidad de esta app te va a permitir recordar eventos importantes o sucesos 
+que es impensable que olvides, te va a ayudar a aorganizar tus notas por fecha para poder acceder a ellas con 
+mas facilidad.
+El diseño esta completamente inspirado en el entorno de Harry Potter, por eso se hace uso de los colores crema
+y rojo, complementando con texturas de papel viejo e iconos que dan un aspecto vintage, haciendo alusión también
+al mapa de los mereodeadores( Espero que seas un fan de Harry Potter y si no puedes encontrar información en este
+link <a  href="https://harrypotter.fandom.com/es/wiki/Mapa_del_Merodeador">
+
+
 necesario para empezar el proyecto, planea que sea un proyecto independiente a
 su trabajo, por ello está buscando algunas colaboradoras dentro de la comunidad
 de Laboratoria para implementar la idea, por lo cual te invitamos a colaborar.

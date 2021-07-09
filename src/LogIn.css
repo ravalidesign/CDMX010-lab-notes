@@ -1,64 +1,62 @@
-.LogIn{
-    background-image: url("./assets/paper.jpg");
-    height: 2000px;
-    width: 770px;
-    padding: 120px 50px 50px 0px;
-    background-repeat: no-repeat;
-
+.LogIn {
+  background-image: url("./assets/paper.jpg");
+  height: 2000px;
+  width: 770px;
+  padding: 120px 50px 50px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
 }
-.Description-remembrall{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 40px;
-    width: 500px;
-    height: 320px;
-    margin: auto;
+.Description-remembrall {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  width: 500px;
+  height: 320px;
+  margin: auto;
 }
 .Description-remembrall p {
-    font-size: 22px;
-    color:#350819;
-    text-align: center;
-    font-family: "Mountains of Christmas", cursive;
+  font-size: 22px;
+  color: #350819;
+  text-align: center;
+  font-family: "Mountains of Christmas", cursive;
 }
-.imgLog{
-    width:160px;
-    margin-left: 165px;
-    margin-bottom: 20px;
+.imgLog {
+  width: 160px;
+  margin-left: 165px;
+  margin-bottom: 20px;
 }
-.formLogin{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.formLogin-content {
+  width: 400px;
+  height: 320px;
+  margin: auto;
+  border-radius: 4px;
+  background: radial-gradient(circle, #500d25, #350819);
+  padding: 15px 15px 15px 15px;
+}
 
+.formLogin-content h2 {
+  font-size: 28px;
+  color: rgb(238, 212, 155);
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Mountains of Christmas", cursive;
 }
-.formLogin-content{
-    width: 400px;
-    height: 320px;
-    margin: auto;
-    border-radius: 4px;
-    background: radial-gradient(circle,  #500d25, #350819);
-    padding: 15px 15px 15px 15px;
-}
-
-.formLogin-content h2{
-    font-size: 28px;
-    color:rgb(238, 212, 155);
-    margin-bottom: 20px;
-    text-align: center;
-    font-family: "Mountains of Christmas", cursive;
-
-
-}
-.controlsLogin{
-    font-size: 20px;
-    color:rgb(238, 212, 155);
-    margin-top: 18px;
-    margin-left: 18px;
-    margin-bottom: 20px;
-    width: 350px;
-    text-align: center;
-    border-color:rgb(238, 212, 155);
-    background-color:transparent;
-    font-family: "Mountains of Christmas", cursive;
+.controlsLogin {
+  font-size: 20px;
+  color: rgb(238, 212, 155);
+  margin-top: 18px;
+  margin-left: 18px;
+  margin-bottom: 20px;
+  width: 350px;
+  text-align: center;
+  border-color: rgb(238, 212, 155);
+  background-color: transparent;
+  font-family: "Mountains of Christmas", cursive;
 }
